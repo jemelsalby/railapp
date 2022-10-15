@@ -6,17 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewalltrainsComponent } from './viewalltrains/viewalltrains.component';
 import { FormsModule } from '@angular/forms';
+import { ViewalltrainComponent } from './viewalltrain/viewalltrain.component';
 
 const routes:Routes=[
   {
 path:'',component:ViewalltrainsComponent
+  },
+  {
+path:'1',component:ViewalltrainComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewalltrainsComponent
+    ViewalltrainsComponent,
+    ViewalltrainComponent
   ],
   imports: [
     BrowserModule,

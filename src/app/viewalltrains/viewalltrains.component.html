@@ -1,3 +1,35 @@
-<p>hi {{name}}</p>
-<input type="text" class="form-control" value="{{name}}" name="name" [(ngModel)]="name">
-<button class="btn btn-primary" (click)="read()">Submit</button>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table" align="center" border="1" width="100%">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">SerialNo</th>
+                        <th scope="col">StationCode</th>
+                        <th scope="col">StationName</th>
+                        <th scope="col">ArrivalTime</th>
+                        <th scope="col">DepartureTime</th>
+                        <th scope="col">Population</th>
+            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor=" let i of list.Route">
+                     
+                         
+                        <td>{{i.SerialNo}} </td>
+                        <td>{{i.StationCode}}</td>    
+                        <td>{{i.StationName}} </td>
+                        <td>{{i.ArrivalTime}} </td>
+                        <td>{{i.DepartureTime}}</td>    
+                        <td>{{i.Distance}} </td>
+
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
